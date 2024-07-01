@@ -1,0 +1,19 @@
+// Adjust main content padding
+.td-main {
+  padding-top: 4rem;
+}
+
+// Ensure navbar stays on top
+.td-navbar {
+  z-index: 1030;
+}
+
+// Adjust sidebar positioning
+.td-sidebar-nav {
+  padding-top: 4rem;
+}
+
+// Add space at the top of the content area
+.td-content {
+  padding-top: 1rem;
+}

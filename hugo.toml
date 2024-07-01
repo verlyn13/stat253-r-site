@@ -1,22 +1,27 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 title = "Stat 253 R Learning Site"
 
 [params]
+  customCSS = ["scss/main.scss"]
   copyright = "The Docsy Authors"
   privacy_policy = "https://policies.google.com/privacy"
 
 [params.ui]
   sidebar_menu_compact = false
+  sidebar_menu_foldable = true
+  sidebar_cache_limit = 10000
   breadcrumb_disable = false
   sidebar_search_disable = false
-  navbar_logo = false
+  navbar_logo = true
   footer_about_enable = true
 
 [params.links]
   [[params.links.developer]]
     name = "GitHub"
-    url = "https://github.com/YOUR-USERNAME/stat253-r-site"
+    url = "https://github.com/verlyn13/stat253-r-site"
     icon = "fab fa-github"
     desc = "Development takes place here!"
 
@@ -24,3 +29,44 @@ title = "Stat 253 R Learning Site"
   [[module.imports]]
     path = "github.com/google/docsy"
     disable = false
+
+# Main menu items
+[[menu.main]]
+  name = "Introduction"
+  weight = 10
+  url = "/introduction/"
+
+[[menu.main]]
+  name = "Basic R"
+  weight = 20
+  url = "/basic-r/"
+
+[[menu.main]]
+  name = "Data Import/Export"
+  weight = 30
+  url = "/data-import-export/"
+
+[[menu.main]]
+  name = "Data Manipulation"
+  weight = 40
+  url = "/data-manipulation/"
+
+[[menu.main]]
+  name = "Statistical Analysis"
+  weight = 50
+  url = "/statistical-analysis/"
+
+[[menu.main]]
+  name = "Data Visualization"
+  weight = 60
+  url = "/data-visualization/"
+
+[[menu.main]]
+  name = "Examples"
+  weight = 70
+  url = "/examples/"
+
+[[menu.main]]
+  name = "Exercises"
+  weight = 80
+  url = "/exercises/"
