@@ -11,7 +11,7 @@ title = "Stat 253 R Learning Site"
   breadcrumb_disable = false
   sidebar_search_disable = false
   navbar_logo = false
-  footer_about_disable = false
+  footer_about_enable = true
 
 [params.links]
   [[params.links.developer]]
